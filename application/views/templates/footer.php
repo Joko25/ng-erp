@@ -12,8 +12,8 @@
 		        <div class="copyright">
 		            &copy;
 		            <?php echo date('Y');?>
-		            <a href="{{copyright.link_name}}" target="{{copyright.target_name}}">NG-ERP</a>. Coded by
-		            <a href="{{copyright.link_by}}" target="{{copyright.target_by}}">Joko Mulyono</a>.
+		            <a href="#">NG-ERP</a>. Coded by
+		            <a href="#">Joko Mulyono</a>.
 		        </div>
 		    </div>
 		</footer>

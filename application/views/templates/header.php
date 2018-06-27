@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url() ?>ng-erp/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="<?php echo base_url() ?>ng-erp/assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>HR Online </title>
+    <title><?php echo index_page() ?></title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>ng-erp/assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="<?php echo base_url() ?>ng-erp/assets/css/demo.css" rel="stylesheet" />
+    <!-- <link href="<?php echo base_url() ?>ng-erp/assets/css/demo.css" rel="stylesheet" /> -->
     <link href="<?php echo base_url() ?>ng-erp/assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://cdn.datatables.net/scroller/1.4.2/css/scroller.dataTables.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.2/css/fixedColumns.dataTables.min.css"> -->
+
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400" ng-controller="mainControllers as header">
@@ -40,7 +41,7 @@
                 </div>
             </div>
             <div class="navbar-translate">
-                <a class="navbar-brand" href="#/" rel="tooltip" title="Human Resource Information System" data-placement="bottom">
+                <a class="navbar-brand" href="home" rel="tooltip" title="Human Resource Information System" data-placement="bottom">
                     NG-ERP
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +52,30 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="<?php echo base_url() ?>ng-erp/assets/img/blurred-image-1.jpg">
                 <ul class="navbar-nav">
+                    <!-- <li class="nav-item dropdown">
+                    	<a class="nav-link dropdown-toggle" data-toggle="dropdown">Login <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<form>
+								<div class="dropdown-item">
+									<input class="form-control" type="text" name="username" placeholder="Username">
+								</div>
+								<div class="dropdown-item">
+									<input class="form-control" type="password" name="password" placeholder="Password">
+								</div>
+								<div class="dropdown-item">
+									<input class="btn btn-primary btn-round" type="submit" value="Sign In"> or <a href="signup" style="color: blue">Sign Up</a>
+								</div>
+							</form>
+						</ul>
+                    </li> -->
                     <li class="nav-item">
-                        <span class="nav-link"><a href="#" >Sign in</a> or <a href="#">Sign Up</a></span>
+                        <span class="nav-link"><a href="login" >Sign in</a></span>
+                    </li>
+                        <span style="padding: 7% 0;">or</span>
+                    <!-- <li class="nav-item">
+                    </li> -->
+                    <li class="nav-item">
+                        <span class="nav-link"><a href="#">Sign Up</a></span>
                     </li>
                     <!-- <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" data-toggle="dropdown">Hello, <span class="caret"></span></a>

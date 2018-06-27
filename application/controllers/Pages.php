@@ -8,20 +8,20 @@ class Pages extends CI_Controller
 	{
 		# code...
 		parent::__construct();
-		$this->load->helper('url');
+		// $this->load->helper('url');
 	}
 
 	public function view($page = 'home'){
-		// echo $page;
+		// echo APPPATH.'views/pages/'.$page.'.php';
 		if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
 			show_404();
         }
 
         $data['title'] = ucfirst($page); // Capitalize the first letter
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('pages/'.$page, $data);
-        $this->load->view('templates/footer', $data);
+        $this->load->view('templates/header');
+        $this->load->view('pages/'.$page);
+        $this->load->view('templates/footer');
 	}
 
 	public function index(){
@@ -29,7 +29,9 @@ class Pages extends CI_Controller
 		$this->load->view('welcome_message');
 	}
 
-	public function create(){
-		echo "create";
+	public function login(){
+		$this->load->view('templates/header');
+        $this->load->view('pages/login');
+        $this->load->view('templates/footer');
 	}
 }

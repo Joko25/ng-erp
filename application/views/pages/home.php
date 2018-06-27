@@ -22,7 +22,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
-                            <h2 class="title">NG-HRIS Online</h2>
+                            <h2 class="title">NG-ERP Online</h2>
                             <h5 class="description">
                                 Hello {{user}}, <br/>
                                 NG-HRIS adalah website sederhana untuk kepentingan perusahaan dalam memasarkan product, dan recruitment. ini adalah halaman administrator. anda bisa mengatur semua halaman di sini. 
