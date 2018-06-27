@@ -51,19 +51,18 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="<?php echo base_url() ?>ng-erp/assets/img/blurred-image-1.jpg">
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#" >asdf</a>
-                    </li> -->
-                    <li class="nav-item dropdown">
-                        <!-- <div class="dropdown"> -->
-                          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Registration<span class="caret"></span></a>
+                    <li class="nav-item">
+                        <span class="nav-link"><a href="#" >Sign in</a> or <a href="#">Sign Up</a></span>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Hello, <span class="caret"></span></a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="/users">Registration</a></li>
                             <li><a class="dropdown-item" href="/setting">Login</a></li>
                             <div class="dropdown-divider"></div>
-                            <!-- <li><a class="dropdown-item" href="#" target="_self" ng-click="logout()">Logout</a></li> -->
+                            <li><a class="dropdown-item" href="#" target="_self" ng-click="logout()">Logout</a></li>
                           </ul>
-                    </li>
+                    </li> -->
 
                     <!-- <li class="nav-item" ng-repeat="nm in navmedia">
                         <a class="nav-link" rel="tooltip" title="{{nm.title}}" data-placement="bottom" href="{{nm.link}}" target="{{nm.target}}">
