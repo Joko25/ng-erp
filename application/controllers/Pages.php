@@ -17,10 +17,23 @@ class Pages extends CI_Controller
 			show_404();
         }
 
-        $data['title'] = ucfirst($page); // Capitalize the first letter
+             // echo $log;
 
-        $this->load->view('templates/header');
-        $this->load->view('pages/'.$page);
+	    $log = $this->session->userdata('status');
+	    $username = $this->session->userdata('name');
+        if ($page == 'home') {
+        	# code...
+        	if ($log == 'login') {
+        		redirect(base_url('ng-erp/dashboard'));
+        		# code...
+        	}
+        }
+        $data['title'] = ucfirst($page); // Capitalize the first letter
+        $data['log'] = $log;
+        $data['username'] = $username;
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer');
 	}
 
@@ -29,7 +42,7 @@ class Pages extends CI_Controller
 		$this->load->view('welcome_message');
 	}
 
-	public function login(){
+	public function dashboard(){
 		$this->load->view('templates/header');
         $this->load->view('pages/login');
         $this->load->view('templates/footer');
