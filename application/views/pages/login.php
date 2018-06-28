@@ -66,7 +66,7 @@
 
     function signin(){
         var url = "<?php echo base_url('ng-erp/auth/aksi_login'); ?>";
-        console.log($('#username').val());
+        console.log(url);
 
         $.post(url,{
             'username':$('#username').val(),

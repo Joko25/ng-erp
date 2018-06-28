@@ -37,10 +37,10 @@
                     <!-- <div class="nucleo-container">
                     <img src="assets/img/nucleo.svg" alt="">
                 </div> -->
-                    <a href="#/page_index" class="btn btn-primary btn-round btn-lg" >Page</a>
-                    <!-- <a href="#/" class="btn btn-primary btn-round btn-lg" target="_blank">Career</a> -->
+                    <!-- <a href="#/page_index" class="btn btn-primary btn-round btn-lg" >Page</a>
+                    <a href="#/" class="btn btn-primary btn-round btn-lg" target="_blank">Career</a>
                     <a href="#/master_product" class="btn btn-primary btn-round btn-lg" >Catalog</a>
-                    <a href="#/hris" class="btn btn-primary btn-round btn-lg">HRIS</a>
+                    <a href="#/hris" class="btn btn-primary btn-round btn-lg">HRIS</a> -->
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="container" align="center">
