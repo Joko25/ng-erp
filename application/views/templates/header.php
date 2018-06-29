@@ -11,6 +11,7 @@
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link href="<?php echo base_url() ?>ng-erp/assets/DataTable/DataTables-1.10.18/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- CSS Files -->
     <link href="<?php echo base_url() ?>ng-erp/assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
@@ -22,6 +23,8 @@
 
     <!--   Core JS Files   -->
     <script src="<?php echo base_url() ?>ng-erp/assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>ng-erp/assets/DataTable/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="<?php echo base_url() ?>ng-erp/assets/DataTable/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
     <script src="<?php echo base_url() ?>ng-erp/assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>ng-erp/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
     <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
@@ -32,6 +35,7 @@
     <script src="<?php echo base_url() ?>ng-erp/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="<?php echo base_url() ?>ng-erp/assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+
 
 </head>
 <body>

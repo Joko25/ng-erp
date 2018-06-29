@@ -47,4 +47,11 @@ class Pages extends CI_Controller
         $this->load->view('pages/login');
         $this->load->view('templates/footer');
 	}
+
+	public function getuser(){
+		$this->load->library('datatables');
+        $this->datatables->select('*');
+        $this->datatables->from('admin');
+        return print_r($this->datatables->generate());
+	}
 }
